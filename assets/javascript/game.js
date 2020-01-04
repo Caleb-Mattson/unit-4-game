@@ -9,14 +9,9 @@ var redValue = 0;
 var yellowValue = 0;
 var blueValue = 0;
 
-var music = new Audio();
-music.src = "../music/loz_music.mp3";
-music.play();
-// $("#numShown").text("green value: " + greenValue);
-
 $(document).ready(function () {
 
-
+    // function to start game
     function run() {
         greenValue = randomNumber(12, 1);
         redValue = randomNumber(12, 1);
@@ -48,19 +43,22 @@ $(document).ready(function () {
         return returnNumber;
     }
 
-    // console.log(cherub);
-
+    // create crystal on click actions
     $("#greenRupee").on("click", function () {
+        // if player wins, increase win counter and run game again
         if (playerPoint === targetPoint) {
             wins++;
             $("#win").text(wins);
             run();
-        }
+        } 
+        // if player loses, increase loss counter and run game again
         if (playerPoint > targetPoint) {
             losses++;
             $("#loss").text(losses);
             run();
-        } else {
+        } 
+        // if neither won nor lost, increase value by crystal amount
+        else {
             playerPoint = playerPoint + greenValue;
             $("#userNum").text(playerPoint);
         }
