@@ -45,7 +45,11 @@ $(document).ready(function () {
 
     // create crystal on click actions
     $("#greenRupee").on("click", function () {
-        // if player wins, increase win counter and run game again
+        // add value of gem to playerPoint
+        playerPoint = playerPoint + greenValue;
+        $("#userNum").text(playerPoint);
+
+        // check if player score is same as target point, increase win counter and run game again
         if (playerPoint === targetPoint) {
             wins++;
             $("#win").text(wins);
@@ -57,14 +61,13 @@ $(document).ready(function () {
             $("#loss").text(losses);
             run();
         } 
-        // if neither won nor lost, increase value by crystal amount
-        else {
-            playerPoint = playerPoint + greenValue;
-            $("#userNum").text(playerPoint);
-        }
+        
     });
 
     $("#yellowRupee").on("click", function () {
+        playerPoint = playerPoint + yellowValue;
+        $("#userNum").text(playerPoint);
+
         if (playerPoint === targetPoint) {
             wins++;
             $("#win").text(wins);
@@ -74,13 +77,13 @@ $(document).ready(function () {
             losses++;
             $("#loss").text(losses);
             run();
-        } else {
-            playerPoint = playerPoint + yellowValue;
-            $("#userNum").text(playerPoint);
-        }
+        } 
     });
 
     $("#redRupee").on("click", function () {
+        playerPoint = playerPoint + redValue;
+        $("#userNum").text(playerPoint);
+
         if (playerPoint === targetPoint) {
             wins++;
             $("#win").text(wins);
@@ -90,13 +93,13 @@ $(document).ready(function () {
             losses++;
             $("#loss").text(losses);
             run();
-        } else {
-            playerPoint = playerPoint + redValue;
-            $("#userNum").text(playerPoint);
-        }
+        } 
     });
 
     $("#blueRupee").on("click", function () {
+        playerPoint = playerPoint + blueValue;
+        $("#userNum").text(playerPoint);
+
         if (playerPoint === targetPoint) {
             wins++;
             $("#win").text(wins);
@@ -106,10 +109,7 @@ $(document).ready(function () {
             losses++;
             $("#loss").text(losses);
             run();
-        } else {
-            playerPoint = playerPoint + blueValue;
-            $("#userNum").text(playerPoint);
-        }
+        } 
     });
 
 
