@@ -12,15 +12,10 @@
 </head>
 
 <body>
+    <h1>WELCOME TO HYRULE</h1>
 
-    <div id="userNum" class="num"></div>
-    <div id="targetNum" class="num"></div>
-    <div id="win" class="num">
-
-    </div>
-    <div id="loss" class="num">
-
-    </div>
+    <div id="userNum"></div>
+    
 
     <div id="buttons">
         <button id="greenRupee"><img src="assets/images/grupee.png" class="rupee"></button>
@@ -31,7 +26,23 @@
 
         <button id="yellowRupee"><img src="assets/images/yrupee.png" class="rupee"></button>
     </div>
+    <div id="container">
+        <p class="content">
+            All the gems have different values! Each turn the values will change. Try to use the gems to add your total score to equal the target score provided! Do your best!
+        </p>
 
+        <div id="target">
+            <p>Target score: <p id="targetNum"></p></p>
+        </div> 
+
+        <div id="winner">
+            <p>Wins: <p id="win"></p></p>
+        </div> 
+
+        <div id="loser">
+            <p>Losses: <p id="loss"></p></p>
+        </div> 
+    </div>
    
 
 

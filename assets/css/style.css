@@ -10,9 +10,16 @@ html {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 64px;
+    color: white;
+    position: absolute;
+    left: 26%;
+    top: 30px;
+}
+
 .rupee {
-    width: 80px;
-    mix-blend-mode: multiply;
+    width: 120px;
 }
 
 button {
@@ -21,25 +28,73 @@ button {
 }
 
 #buttons {
-    margin: -100px 0 0 -150px;
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    z-index: 15;
+    left: 38%;
+    top: 181px;
+    position: relative;
+    float: left;
 }
 
-/* #userNum {
-    background: white;
-    opacity: .7;
-    font-size: 24px;
-    z-index: 10000000;
-    width: 300px;
-    height: 175px;
-} */
-
-.num {
-    font-size: 24px;
-    left: 450px;
+#userNum {
+    font-size: 90px;
     position: relative;
     background: white;
+    text-align: center;
+    width: 160px;
+    border: solid black 1px;
+    margin-top: 2px;
+    top: 125px;
+    left: 48%;
+    
+}
+
+#container {
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    top: 420px;
+    margin-top: 5px;
+}
+
+.content {
+    border: solid black 1px;
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    position: relative;
+    line-height: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+#target {
+    border: solid black 1px;
+    background: white;
+    width: 376px;
+    padding: 20px;
+    position: relative;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#winner {
+    border: solid black 1px;
+    background: white;
+    width: 114px;
+    padding: 10px;
+    position: relative;
+    font-size: 24px;
+    float: left;
+    margin-top: 5px;
+}
+
+#loser {
+    border: solid black 1px;
+    background: white;
+    width: 114px;
+    padding: 10px;
+    position: relative;
+    font-size: 24px;
+    float: left;
+    margin-top: 5px;
 }
