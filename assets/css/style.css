@@ -4,4 +4,42 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rupee {
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+
+button {
+    background: none;
+    border: none;   
+}
+
+#buttons {
+    margin: -100px 0 0 -150px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 15;
+}
+
+/* #userNum {
+    background: white;
+    opacity: .7;
+    font-size: 24px;
+    z-index: 10000000;
+    width: 300px;
+    height: 175px;
+} */
+
+.num {
+    font-size: 24px;
+    left: 450px;
+    position: relative;
+    background: white;
+}
