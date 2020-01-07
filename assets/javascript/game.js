@@ -9,7 +9,12 @@ var redValue = 0;
 var yellowValue = 0;
 var blueValue = 0;
 
+
 $(document).ready(function () {
+    var audio = new Audio("loz_music.mp3");
+
+    audio.play();
+
 
     // function to start game
     function run() {
@@ -31,7 +36,6 @@ $(document).ready(function () {
         console.log(targetPoint);
         console.log(playerPoint);
         console.log(wins, losses);
-
     }
 
     run()
